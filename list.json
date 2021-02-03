@@ -316,7 +316,7 @@
         "repository": "dockerhub",
         "arch": "armhf",
         "icon": "https://raw.githubusercontent.com/tomek120697/container-apps/master/images/pihole_icon.png",
-        "displayName": "Traefik",
+        "displayName": "Pi-hole",
         "name": "pihole/pihole",
         "version": "latest",
         "location": "https://hub.docker.com/r/pihole/pihole",
