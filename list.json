@@ -306,7 +306,7 @@
         "arch": "armhf",
         "icon": "https://raw.githubusercontent.com/tomek120697/container-apps/master/images/traefik_icon.png",
         "displayName": "Traefik",
-        "name": "_/traefik",
+        "name": "traefik",
         "version": "latest",
         "location": "https://hub.docker.com/_/traefik",
         "type": "docker"
