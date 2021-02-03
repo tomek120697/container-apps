@@ -1,40 +1,5 @@
-container-apps
-=========
+**THIS IS A FORK ONLY FOR arm32v7 PROCESSOR**
 
-An image and application list for [QNAP Container Station](https://www.qnap.com/solution/container_station/en-us/).
+Addition test of other containers for arm32v7 architecture
 
-
-Using your own image list
--------------------------
-
-1. Click the “Fork” button in the upper-right corner of the GitHub interface.
-2. Add your image and application information.
-3. Change your preference application repository settings in Container Station.
-
-
-Contributing
-------------
-
-Want to help add more useful images and applications? Check out our [contributing documentation](https://github.com/qnap-dev/container-apps/blob/master/CONTRIBUTING.md).
-
-These instructions may not be complete, please inform us if we should update anything. Better yet, submit a PR and improve them yourself.
-
-Reporting Issues
---------------------
-
-Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas). After that if you find a bug or want to make feature request related to container-apps, please open a new issue.
-
-Please report *Container Station* issues in [QNAP Helpdesk](https://helpdesk.qnap.com/).
-
-
-
-Related Projects
-----------------
-
-* [Docker Engine](https://github.com/docker/docker-ce): Container Station using v17.09.1
-* [Docker Compose](https://github.com/docker/compose): Container Station using v1.22
-
-
-License
--------
-Container-apps is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE). for full license text.
+Testing on TS-231P
