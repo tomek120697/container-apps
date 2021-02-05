@@ -301,17 +301,6 @@
         "type": "docker"
     },
     {
-        "description": "Traefik is a modern HTTP reverse proxy and load balancer that makes deploying microservices easy.",
-        "repository": "dockerhub",
-        "arch": "armhf",
-        "icon": "https://raw.githubusercontent.com/tomek120697/container-apps/master/images/traefik_icon.png",
-        "displayName": "Traefik",
-        "name": "traefik",
-        "version": "latest",
-        "location": "https://hub.docker.com/_/traefik",
-        "type": "docker"
-    },
-    {
         "description": "The official Pi-hole Docker image from pi-hole.net",
         "repository": "dockerhub",
         "arch": "armhf",
