@@ -310,16 +310,5 @@
         "version": "latest",
         "location": "https://hub.docker.com/r/pihole/pihole",
         "type": "docker"
-    },
-        {
-        "description": "MariaDB is a community-developed fork of MySQL intended to remain free under the GNU GPL.",
-        "repository": "dockerhub",
-        "arch": "armhf",
-        "icon": "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-mariadb-logo.png",
-        "displayName": "MariaDB",
-        "name": "mariadb",
-        "version": "latest",
-        "location": "https://hub.docker.com/_/mariadb",
-        "type": "docker"
     }
 ]
