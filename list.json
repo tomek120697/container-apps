@@ -69,6 +69,17 @@
         "location": "https://hub.docker.com/r/arm32v7/ubuntu",
         "type": "docker"
     },
+        {
+        "description": "Ubuntu is a Linux distribution based on Debian and mostly composed of free and open-source software.",
+        "repository": "dockerhub",
+        "arch": "armhf",
+        "icon": "https://raw.githubusercontent.com/tomek120697/container-apps/master/images/ubuntu_icon.png",
+        "displayName": "Ubuntu 20.04",
+        "name": "arm32v7/ubuntu",
+        "version": "focal",
+        "location": "https://hub.docker.com/r/arm32v7/ubuntu",
+        "type": "docker"
+    },
     {
         "description": "Ruby is a dynamic, reflective, object-oriented, general-purpose, open-source programming language.",
         "repository": "dockerhub",
