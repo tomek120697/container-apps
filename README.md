@@ -5,6 +5,18 @@ Tested on TS-231P, but 99% will work on others based on this architecture.
 The list with containers is updated by me from time to time. Not everything can be loaded due to the version of docker itself in qnap. Dockers based on newer ubuntu, debian etc distributions may not work. I try to test new dockers as much as possible.
 
 ---
+**Additional notes**
+
+For better container management I recommend portainer.  
+Commands to install (SSH):
+```sh
+docker volume create portainer_data
+```
+The command above is used to create a volume for the portainer that it needs to use. If you do not enter it, it will still be created automatically, but it will be a set of random characters.
+```sh
+docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+```
+---
 **Instructions for LXC Containers:**
 1. You need to enable SSH.
 2. Log in to your administrator account and exit the Management Console if you have it enabled.
