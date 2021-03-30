@@ -25,6 +25,12 @@ A list of LXC images can be found:
 - [Linux Containers](http://uk.images.linuxcontainers.org/)
 - [On my website (the list includes only armhf)](https://tomek120697.pl/qnap/lxc.html)
 
+# Important
+
+After installation, some applications may be missing from the container and errors will pop up when you try to change them. __DO NOT PANIC!__ Read the warning calmly. This will usually be an error that some application or script cannot be found.
+
+For example: after installing the ubuntu (dist:focal) container, you may not be able to switch NAT to Bridge. An error will pop up due to resolvconf not being found. Just issue the install command "apt-get install resolvconf".
+
 ---
 
 ### Things I plan to do at a later date:
