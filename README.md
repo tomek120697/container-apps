@@ -7,18 +7,18 @@ The list with containers is updated by me from time to time. Not everything can 
 ---
 **Instructions for LXC Containers:**
 1. You need to enable SSH.
-2. Log in with an administrator account and exit Console Management.
+2. Log in to your administrator account and exit the Management Console if you have it enabled.
 3. to start the download and load the lxc container type the command:
-	```sh
-    lxc-create -n <name> -t /usr/share/lxc/templates/lxc-download
+    ```sh
+    lxc-create -n name -t /usr/share/lxc/templates/lxc-download
     ```
-    1. In the name field, enter a name for the container.
+    1. In the **name** field, enter a name for the container.
     2. -t refers to the template. There are several templates but I recommend using the one above.
-    3. You can find additional information by typing
-    	```sh
-    	lxc-create --help
-    	```
-4. The installer will then ask you for the distribution, release, and architecture (for the TS-231P model tested, this will be armhf)
+    3. You can find additional information by typing.
+    ```sh
+    lxc-create --help
+    ```
+4. The installer will then ask you for the distribution, release, and architecture (for the TS-231P model tested, this will be armhf).
 5. Done! The rest of the parameters can be set in the Container Station.
 
 A list of LXC images can be found:
