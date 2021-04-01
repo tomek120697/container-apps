@@ -268,17 +268,6 @@
         "type": "docker"
     },
     {
-        "description": "Docker Official Images",
-        "repository": "dockerhub",
-        "arch": "armhf",
-        "icon": "https://raw.githubusercontent.com/tomek120697/container-apps/master/images/nextcloud_icon.png",
-        "displayName": "NextCloud",
-        "name": "nextcloud",
-        "version": "latest",
-        "location": "https://hub.docker.com/_/nextcloud",
-        "type": "docker"
-    },
-    {
         "description": "Nextcloud is the most deployed on-premises file share and collaboration platform.",
         "repository": "dockerhub",
         "arch": "armhf",
