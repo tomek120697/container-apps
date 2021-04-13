@@ -10,6 +10,16 @@ The list with containers is updated by me from time to time. Not everything can 
 
 I prefer to use Container Station or the CLI. For Container station use pull in the images tab. The standard use of the create tab is partially discouraged. Mainly because of problems with Container station not entering Environment. With pull, this problem does not occur, and the content is entered correctly.
 
+To download the images, I recommend going to the website:
+- [Docker Hub](https://hub.docker.com/)
+
+in the search engine just type one of the following
+
+- armhf
+- arm32v7
+
+or try searching for a specific image.
+
 ---
 
 **Instructions for LXC Containers:**
