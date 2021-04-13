@@ -5,18 +5,13 @@ Tested on TS-231P, but 99% will work on others based on this architecture.
 The list with containers is updated by me from time to time. Not everything can be loaded due to the version of docker itself in qnap. Dockers based on newer ubuntu, debian etc distributions may not work. I try to test new dockers as much as possible.
 
 ---
-**Additional notes**
 
-For better container management I recommend portainer.  
-Commands to install (SSH):
-```sh
-docker volume create portainer_data
-```
-The command above is used to create a volume for the portainer that it needs to use. If you do not enter it, it will still be created automatically, but it will be a set of random characters.
-```sh
-docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
-```
+**Instructions for Docker Containers:**
+
+I prefer to use Container Station or the CLI. For Container station use pull in the images tab. The standard use of the create tab is partially discouraged. Mainly because of problems with Container station not entering Environment. With pull, this problem does not occur, and the content is entered correctly.
+
 ---
+
 **Instructions for LXC Containers:**
 1. You need to enable SSH.
 2. Log in to your administrator account and exit the Management Console if you have it enabled.
@@ -35,13 +30,27 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 
 A list of LXC images can be found:
 - [Linux Containers](http://uk.images.linuxcontainers.org/)
-- [On my website (the list includes only armhf)](https://tomek120697.pl/qnap/lxc.html)
 
-# Important
+## Important
 
 After installation, some applications may be missing from the container and errors will pop up when you try to change them. __DO NOT PANIC!__ Read the warning calmly. This will usually be an error that some application or script cannot be found.
 
-For example: after installing the ubuntu (dist:focal) container, you may not be able to switch NAT to Bridge. An error will pop up due to resolvconf not being found. Just issue the install command "apt-get install resolvconf".
+For example: after installing the ubuntu lxc container, you may not be able to switch NAT to Bridge. An error will pop up due to resolvconf not being found. Just issue the install command "apt-get install resolvconf" if you are using ubuntu. For other distributions, look up how to install the appropriate package.
+
+---
+
+#### Additional notes
+
+***Port 80 problem***
+
+When the web server on the QNAP is turned off, port 80 is still blocked. This is caused by a misconfiguration of the program.
+
+The simplest solution to the problem:
+
+```
+In the web server settings in QNAP set a different port (e.g.: 81 or 90).
+If you disable the Web Server you will again block port 80.
+```
 
 ---
 
